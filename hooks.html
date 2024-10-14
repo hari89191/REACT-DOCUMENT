@@ -1,0 +1,79 @@
+#<!-- Hooks -->
+
+hooks is just a function,
+
+hooks are introduced in React 16.8 version
+
+hooks are used only (working) in functional based components, we can't able to use hooks inside class based components
+
+don't write hooks inside return always hooks are in top of return
+
+useState, useEffect, useMemo, useCallback, useReducer, useLayoutEffect ... etc
+
+we can able to write our own custom hooks (by using use keyword)
+
+==>React life-cycle-methods
+
+three phases ==> Mounting , updating, unMounting
+Mounting ==> whenever creating a component it's in mounting phase
+
+mounting methods==>
+
+1.constructor()
+
+2.getDerivedStateToProps()
+
+3.render()
+
+4.componentDidMount()
+
+updating ==> whenever we are getting newChanges or new props these methods are triggered
+
+1. constructor()
+
+2. shouldComponentUpdate()
+
+3. render()
+
+4. componentDidUpdate()
+
+unMounting==> if you want detach the component that's called unMounting
+
+1.constructor()
+
+2. render()
+
+3. componentWillUnmount()
+
+useState ==>
+state ==> it will store the value in the component
+
+it will allows us to intialize and update state inside the functional based components
+
+syntax ==> const [initialValue, callbackFunction] = useState(initialValue) ==> we're using array destructuring syntax for useState
+
+whenever state value got updated page will be refreshed automatically
+
+don't write useState inside loops/ conditions
+
+useEffect ==>
+
+it will handle the sideEffects (apiCalls)
+
+it will allows us to write life cycle methods inside functional based components
+
+it will cover three lifeCycleMethods compunentDidMount, componentDidUpdate, componentWillUnMount
+
+useEffect syntax==> it will accepts two arguments one is callback function and another one is dependency
+
+useEffect only triggered after render method
+
+useEffect(()=>{}, dependency value)
+
+useEffect(()=>{}, []) ==> the empty array means it will execute after initial rendering, if you are not passing empty array it will
+render every time value got change
+
+our approach in React
+
+render ==> available data ==> api calls
+mzf-omih-emg
